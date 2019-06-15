@@ -1,0 +1,3 @@
+/home/agiledeveloper/CLionProjects/CppND-System-Monitor/CMakeFiles/rebuild_cache.dir
+/home/agiledeveloper/CLionProjects/CppND-System-Monitor/CMakeFiles/CppND-System-Monitor.dir
+/home/agiledeveloper/CLionProjects/CppND-System-Monitor/CMakeFiles/edit_cache.dir

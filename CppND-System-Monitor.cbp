@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CppND-System-Monitor"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/agiledeveloper/CLionProjects/CppND-System-Monitor"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/agiledeveloper/CLionProjects/CppND-System-Monitor/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/agiledeveloper/CLionProjects/CppND-System-Monitor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/agiledeveloper/CLionProjects/CppND-System-Monitor/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/agiledeveloper/CLionProjects/CppND-System-Monitor/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/agiledeveloper/CLionProjects/CppND-System-Monitor"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/agiledeveloper/CLionProjects/CppND-System-Monitor/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/agiledeveloper/CLionProjects/CppND-System-Monitor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/agiledeveloper/CLionProjects/CppND-System-Monitor/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/agiledeveloper/CLionProjects/CppND-System-Monitor/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CppND-System-Monitor">
+				<Option output="/home/agiledeveloper/CLionProjects/CppND-System-Monitor/CppND-System-Monitor" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agiledeveloper/CLionProjects/CppND-System-Monitor"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/agiledeveloper/CLionProjects/CppND-System-Monitor/Makefile&quot;  VERBOSE=1 CppND-System-Monitor"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/agiledeveloper/CLionProjects/CppND-System-Monitor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/agiledeveloper/CLionProjects/CppND-System-Monitor/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/agiledeveloper/CLionProjects/CppND-System-Monitor/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CppND-System-Monitor/fast">
+				<Option output="/home/agiledeveloper/CLionProjects/CppND-System-Monitor/CppND-System-Monitor" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agiledeveloper/CLionProjects/CppND-System-Monitor"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/agiledeveloper/CLionProjects/CppND-System-Monitor/Makefile&quot;  VERBOSE=1 CppND-System-Monitor/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/agiledeveloper/CLionProjects/CppND-System-Monitor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/agiledeveloper/CLionProjects/CppND-System-Monitor/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/agiledeveloper/CLionProjects/CppND-System-Monitor/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/agiledeveloper/CLionProjects/CppND-System-Monitor"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/agiledeveloper/CLionProjects/CppND-System-Monitor/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/agiledeveloper/CLionProjects/CppND-System-Monitor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/agiledeveloper/CLionProjects/CppND-System-Monitor/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/agiledeveloper/CLionProjects/CppND-System-Monitor/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/agiledeveloper/CLionProjects/CppND-System-Monitor/main.cpp">
+			<Option target="CppND-System-Monitor"/>
+		</Unit>
+		<Unit filename="/home/agiledeveloper/CLionProjects/CppND-System-Monitor/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
