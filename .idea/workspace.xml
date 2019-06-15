@@ -12,6 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8697024-34c8-4f69-b5e0-7c1839feeaaa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/CppND-System-Monitor" beforeDir="false" afterPath="$PROJECT_DIR$/CppND-System-Monitor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Process.h" beforeDir="false" afterPath="$PROJECT_DIR$/Process.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -55,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Process.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="29" column="58" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
+            <state relative-caret-position="458">
+              <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -76,6 +77,7 @@
       <find>Non - existing PID`</find>
       <find>active</find>
       <find>compare</find>
+      <find>+ &quot;&quot;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -173,7 +175,7 @@
       <workItem from="1560170858139" duration="4668000" />
       <workItem from="1560321339478" duration="7946000" />
       <workItem from="1560516875326" duration="19375000" />
-      <workItem from="1560616924250" duration="1901000" />
+      <workItem from="1560616924250" duration="2140000" />
     </task>
     <task id="LOCAL-00001" summary="implement getVMSize">
       <created>1560175024510</created>
@@ -189,11 +191,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560175084269</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="implement Process.h todo">
+      <created>1560618918750</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1560618918751</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46489000" />
+    <option name="totallyTimeSpent" value="46728000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="3241" height="1303" extended-state="6" />
@@ -210,7 +219,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32985204" />
+      <window_info anchor="bottom" id="Messages" order="8" visible="true" weight="0.32985204" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32985204" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.32985204" />
@@ -227,7 +236,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implement getVMSize" />
     <MESSAGE value="add todo" />
-    <option name="LAST_COMMIT_MESSAGE" value="add todo" />
+    <MESSAGE value="implement Process.h todo" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement Process.h todo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -408,8 +418,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Process.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="29" column="58" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
+        <state relative-caret-position="458">
+          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
         </state>
       </provider>
     </entry>
