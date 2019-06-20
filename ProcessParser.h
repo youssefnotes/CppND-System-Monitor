@@ -66,16 +66,16 @@ public:
     }
 
     static float getSysActiveCpuTime(vector<string> values) {
-        return (stof(values[S_USER]) +
-                stof(values[S_NICE]) +
-                stof(values[S_SYSTEM]) +
-                stof(values[S_IRQ]) +
-                stof(values[S_SOFTIRQ]) +
-                stof(values[S_STEAL]) +
-                stof(values[S_GUEST]) +
-                stof(values[S_GUEST_NICE]));
+//        return (stof(values[S_USER]) +
+//                stof(values[S_NICE]) +
+//                stof(values[S_SYSTEM]) +
+//                stof(values[S_IRQ]) +
+//                stof(values[S_SOFTIRQ]) +
+//                stof(values[S_STEAL]) +
+//                stof(values[S_GUEST]) +
+//                stof(values[S_GUEST_NICE]));
 
-//        return (10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0);
+        return (10.0);
     }
 };
 
@@ -164,15 +164,25 @@ long int ProcessParser::getSysUpTime() {
 
 std::string ProcessParser::PrintCpuStats(std::vector<std::string> values1, std::vector<std::string> values2) {
     // TODO the values1, values2 causes segmentation error and dump, when passed to these functions. lets investigate it during review
-//    float activeTime = ProcessParser::getSysActiveCpuTime(values2) - ProcessParser::getSysActiveCpuTime(values1);
-//    float idleTime = ProcessParser::getSysIdleCpuTime(values2) - ProcessParser::getSysIdleCpuTime(values1);
-//    float totalTime = activeTime + idleTime;
-//    float result = 100.0 * (activeTime / totalTime);
-//    return to_string(result);
-    return "";
+    float activeTime = ProcessParser::getSysActiveCpuTime(values2) - ProcessParser::getSysActiveCpuTime(values1);
+    float idleTime = ProcessParser::getSysIdleCpuTime(values2) - ProcessParser::getSysIdleCpuTime(values1);
+    float totalTime = activeTime + idleTime;
+    float result = 100.0 * (activeTime / totalTime);
+    return to_string(result);
 }
 
 bool ProcessParser::isPidExisting(string pid) {
+//    auto pid_list = ProcessParser::getPidList();
+//    for (std::vector<string>::iterator it = pid_list.begin(); it != pid_list.end(); it++) {
+//        if (pid == *it) {
+//            return true;
+//        }
+//    }
+    for (auto const &pid_list : ProcessParser::getPidList()) {
+        if (pid == pid_list) {
+            return true;
+        }
+    }
     return false;
 }
 
@@ -338,7 +348,21 @@ int ProcessParser::getTotalThreads() {
 }
 
 int ProcessParser::getTotalNumberOfProcesses() {
-    return 0;
+    string line;
+    int result = 0;
+    string name = "processes";
+    ifstream stream;
+    Util::getStream(Path::basePath() + Path::statPath(), stream);
+    while (getline(stream, line)) {
+        if (line.compare(0, name.size(), name) == 0) {
+            istringstream buf(line);
+            istream_iterator<string> beg(buf), end;
+            std::vector<string> values(beg, end);
+            result += stoi(values[1]);
+            break;
+        }
+    }
+    return result;
 }
 
 int ProcessParser::getNumberOfRunningProcesses() {
