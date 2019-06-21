@@ -112,7 +112,7 @@ std::string ProcessParser::getVmSize(string pid) {
     ifstream process;
     Util::getStream(Path::basePath() + pid + Path::statusPath(), process);
     std::string line;
-    const std::string vm_size = "VmSize:";
+    const std::string vm_size = "VmData:";
     float result;
     while (getline(process, line)) {
 //        if (line.find("VmSize:") != std::string::npos) {

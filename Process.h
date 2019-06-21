@@ -21,7 +21,7 @@ public:
         this->user = ProcessParser::getProcUser(pid);
         //TODOs:
         //complete for mem
-        this->mem = ProcessParser::getSysRamPercent();
+        this->mem = ProcessParser::getVmSize(pid);
         //complete for cmd
         this->cmd = ProcessParser::getCmd(this->pid);
         //complete for upTime
@@ -63,5 +63,25 @@ string Process::getProcess() {
     this->cpu = ProcessParser::getCpuPercent(this->pid);
 //TODO: finish the string! this->user + "   "+ mem...cpu...upTime...;
     return (this->pid + "   " + this->user + +"   " + this->cmd + "   " +
-    this->cpu + "   " + this->mem + "   " + this->upTime);
+            this->cpu + "   " + this->mem + "   " + this->upTime);
+}
+
+string Process::getUpTime() const {
+    return this->upTime;
+}
+
+int Process::getMem() const {
+    return stoi(this->mem);
+}
+
+int Process::getCpu() const {
+    return stoi(this->cpu);
+}
+
+string Process::getCmd() const {
+    return this->cmd;
+}
+
+string Process::getUser() const {
+    return this->user;
 }
